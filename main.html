@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>foodie</title>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      #topcover {
+        height: 500px;
+        width: 100%;
+        background-image: url("https://t3.ftcdn.net/jpg/02/44/98/50/360_F_244985001_JkE2leAeXd0h91yOOXrq2Gfl7OKOg0qp.jpg");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+      }
+
+      #logo2 {
+        width: 100%;
+        margin-top: 120px;
+        text-align: center;
+        font-size: 70px;
+      }
+
+      #topcontent {
+        width: 100%;
+        text-align: center;
+        color: #c0c0c0c9;
+        font-size: 40px;
+      }
+
+      #btn11 {
+        height: 35px;
+        font-size: 20px;
+        background: rgba(0, 0, 0, 0.2);
+        border: 0;
+        color: white;
+      }
+
+      #topmenu {
+        width: 100%;
+        height: 100px;
+        //border:2px solid black;
+        position: fixed;
+        top: 1px;
+        background: rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: row;
+      }
+
+      #logo {
+        font-size: 40px;
+        margin: 25px 180px;
+        color: #c7c7c7;
+        text-shadow: 2px 2px 4px #000000;
+      }
+
+      #namee {
+        font-family: fantasy;
+      }
+
+      #categories {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 40px;
+        margin-left: 298px;
+        color: white;
+        width: 600px;
+      }
+
+      #logo2 {
+        font-size: 48px;
+        color: #c7c7c7;
+        text-shadow: 2px 2px 4px #000000;
+      }
+
+      #adv {
+        height: 700px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        //border:2px solid black;
+      }
+
+      #adimg {
+        background-image: url("https://media3.s-nbcnews.com/j/newscms/2019_41/3044956/191009-cooking-vegetables-al-1422_ae181a762406ae9dce02dd0d5453d1ba.fit-2000w.jpg");
+        background-position: center;
+        background-size: cover;
+        width: 50%;
+        height: 70%;
+        margin-top: 100px;
+      }
+
+      #adtext {
+        height: 50%;
+        width: 40%;
+        margin-top: 100px;
+      }
+
+      #chooser {
+        height: 900px;
+        width: 100%;
+        //border:2px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #e0e0e0;
+      }
+
+      #optt {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 70%;
+      }
+
+      .restt {
+        height: 70%;
+        width: 40%;
+      }
+
+      #restimg {
+        background-image: url("https://images.unsplash.com/photo-1552566626-52f8b828add9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cmVzdGF1cmFudHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80");
+        background-position: center;
+        background-size: cover;
+        height: 76%;
+        width: 100%;
+      }
+
+      #foodimg {
+        background-image: url("https://www.cdc.gov/foodsafety/images/comms/food-Safety-Tips-small.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 76%;
+        width: 100%;
+      }
+
+      .resttext {
+        text-align: center;
+        font-size: 40px;
+        font-family: german;
+      }
+
+      #spcl {
+        //border:2px solid black;
+        width: 100%;
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      #hhh {
+        text-align: center;
+        font-size: 50px;
+        font-family: sans;
+      }
+
+      #spclicons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        border:2px solid black;
+      }
+
+      .offr {
+        width: 200px;
+        height: 240px;
+        //border:2px solid black;
+        margin: 54px;
+        background-color: #e0e0e0;
+      }
+
+      .offtxt {
+        text-align: center;
+        font-size: 20px;
+        margin: 0px 50px;
+      }
+
+      #covid {
+        height: 550px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        //border:2px solid black;
+        background: rgba(0, 0, 0, 0.2);
+      }
+
+      #covimg {
+        background-image: url("https://images.squarespace-cdn.com/content/56a2785c69a91af45e06a188/1590678823777-3UO1FH17YY3AQOY9XUXR/Restaurant-Safe-Food-Delivery.png?format=1500w&content-type=image%2Fpng");
+        height: 60%;
+        width: 40%;
+        background-position: center;
+        background-size: cover;
+        margin-top: 8%;
+      }
+
+      #covdet {
+        height: 60%;
+        width: 50%;
+        margin-top: 8%;
+      }
+
+      #contactus {
+        height: 550px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border:2px solid black;
+        background: black;
+      }
+
+      #lft {
+        height: 60%;
+        width: 20%;
+        margin-top: 3%;
+      }
+
+      #rght {
+        height: 60%;
+        width: 25%;
+        margin-top: 5%;
+      }
+
+      #logo3 {
+        font-size: 50px;
+        color: #c7c7c7;
+      }
+
+      .bdshadow {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .bdshadow:hover {
+        box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 10px #c7c7c7;
+        transition: 0.2s all;
+      }
+
+      .catlink {
+        text-decoration: none;
+        color: white;
+      }
+
+      .catlink1 {
+        text-decoration: none;
+        color: black;
+      }
+
+      .footer {
+        background-color: black;
+        color: white;
+        margin: 5px;
+      }
+
+      .footer p a {
+      }
+
+      .footer p a:hover {
+        text-decoration: none;
+        color: white;
+      }
+
+      .wrapper {
+        /* border:1px solid red;*/
+        width: 90%;
+        margin: 0 auto;
+        padding: 1% 1%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="topcover">
+      <div id="logo2">
+        <i class="fas fa-utensils"></i>
+        <span id="namee">foodie</span>
+      </div>
+      <div id="topcontent">
+        Experience the best food delivery service near you<br />
+        by ordering through Foodie!<br />
+        <a href="#spcl"
+          ><button id="btn11" class="bdshadow">
+            click here to see deals of the day
+          </button></a
+        >
+      </div>
+    </div>
+
+    <div id="topmenu" class="bdshadow">
+      <div id="logo" class="toptext">
+        <i class="fas fa-utensils"></i>
+        <span id="namee">foodie</span>
+      </div>
+      <div id="categories">
+        <a class="catlink" href="restaurants.html"
+          ><div class="categ">RESTAURANTS</div></a
+        >
+        <a class="catlink" href="#spcl"
+          ><div class="categ">SPECIAL OFFERS</div></a
+        >
+        <a class="catlink" href="login.html"
+          ><div class="categ">LOCATION</div></a
+        >
+        <a class="catlink" href="#contactus"
+          ><div class="categ">CONTACT US</div></a
+        >
+        <a class="catlink" href="cart.html"
+          ><div class="categ">
+            CART
+            <i class="fas fa-shopping-cart"></i></div
+        ></a>
+      </div>
+    </div>
+
+    <div id="adv">
+      <div id="adimg"></div>
+      <div id="adtext">
+        <h1 style="font-size: 60px">
+          <b
+            >Order Food From Foodie And Get Your Favourite Dish At Best Price</b
+          >
+        </h1>
+        <h2>
+          foodie provides you best service with all covid precautions and in
+          shortest time possible
+        </h2>
+      </div>
+    </div>
+
+    <div id="chooser">
+      <div id="opthead">
+        <h1 id="hhh">
+          <i class="fas fa-utensils"></i> Explore our site
+          <i class="fas fa-utensils"></i>
+        </h1>
+      </div>
+      <div id="optt">
+        <div class="restt bdshadow">
+          <a href="restaurants.html" class="catlink">
+            <div id="restimg"></div>
+            <p class="resttext">Restaurants</p>
+          </a>
+        </div>
+        <div class="restt bdshadow">
+          <a href="food5.html" class="catlink">
+            <div id="foodimg"></div>
+            <p class="resttext">Dishes</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="spcl">
+      <div id="sphead">
+        <h1 id="hhh">
+          <i class="fas fa-utensils"></i> Offers Of The Day
+          <i class="fas fa-utensils"></i>
+        </h1>
+      </div>
+      <div id="spclicons">
+        <a class="catlink1" href="food1.html"
+          ><div class="offr bdshadow">
+            <img
+              width="200px"
+              height="180px"
+              src="https://purewows3.imgix.net/images/articles/2020_02/traditional-chinese-food-peking-duck.jpg?auto=format,compress&cs=strip"
+            />
+            <p class="offtxt">50% off!</p>
+          </div></a
+        >
+        <a class="catlink1" href="food2.html"
+          ><div class="offr bdshadow">
+            <img
+              width="200px"
+              height="180px"
+              src="https://static.dezeen.com/uploads/2021/01/burger-king-logo-rebrand-bk-jkr_logo_dezeen_2364_col_0.jpg"
+            />
+            <p class="offtxt">30% off!</p>
+          </div></a
+        >
+        <a class="catlink1" href="food3.html"
+          ><div class="offr bdshadow">
+            <img
+              width="200px"
+              height="180px"
+              src="https://pbs.twimg.com/profile_images/1218132286647877635/GdXkBvYx.jpg"
+            />
+            <p class="offtxt">buy one get one free</p>
+          </div></a
+        >
+        <a class="catlink1" href="food4.html"
+          ><div class="offr bdshadow">
+            <img
+              width="200px"
+              height="180px"
+              src="https://1000logos.net/wp-content/uploads/2017/03/KFC-Logo.png"
+            />
+            <p class="offtxt">30% off!</p>
+          </div></a
+        >
+        <a class="catlink1" href="food5.html"
+          ><div class="offr bdshadow">
+            <img
+              width="200px"
+              height="180px"
+              src="https://i.pinimg.com/originals/44/b0/b6/44b0b6460f9ad67ee5e3f762e123263b.png"
+            />
+            <p class="offtxt">50% off!</p>
+          </div></a
+        >
+        <a class="catlink1" href="food6.html"
+          ><div class="offr bdshadow">
+            <img
+              width="200px"
+              height="180px"
+              src="https://www.shoutlo.com/assets/images/merchant_images/merchant-154802-5e3944da93dd5.jpg"
+            />
+            <p class="offtxt">40% off!</p>
+          </div></a
+        >
+        <a class="catlink1" href="food7.html"
+          ><div class="offr bdshadow">
+            <img
+              width="200px"
+              height="180px"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Dominos_pizza_logo.svg/1200px-Dominos_pizza_logo.svg.png"
+            />
+            <p class="offtxt">30% off!</p>
+          </div></a
+        >
+        <a class="catlink1" href="food8.html"
+          ><div class="offr bdshadow">
+            <img
+              width="200px"
+              height="180px"
+              src="https://1000logos.net/wp-content/uploads/2017/05/Pizza-Hut-Logo-1974.jpg"
+            />
+            <p class="offtxt">free delivery</p>
+          </div></a
+        >
+      </div>
+    </div>
+
+    <div id="covid">
+      <div id="covimg"></div>
+      <div id="covdet">
+        <h1 style="font-size: 60px">
+          <b>We provide safe and contact free delivery due to covid</b>
+        </h1>
+        <h2>
+          <ul>
+            <li>food package is sanitized from outside</li>
+            <li>temperature of delivery boy is checked</li>
+            <li>proper precautions are taken while preparing food</li>
+          </ul>
+        </h2>
+      </div>
+    </div>
+
+    <div id="contactus" style="color: white">
+      <div id="lft">
+        <div id="logo3">
+          <i class="fas fa-utensils"></i>
+          <span id="namee">foodie</span>
+        </div>
+        <div id="lct">
+          <h1><u>Address</u></h1>
+          <p>
+            building no.6<br />
+            sector 17<br />
+            chandigarh
+          </p>
+          <h1><u>phone no.</u></h1>
+          <p>
+            mobile no. 9085112345<br />
+            telephone 0172-2345123
+          </p>
+          <h1><u>Email id</u></h1>
+          <p>support@foodie.com</p>
+        </div>
+      </div>
+      <div id="rght">
+        <h1>How was your experience with us?</h1>
+        <textarea
+          rows="18"
+          cols="50"
+          placeholder="Enter your feedback here"
+        ></textarea>
+        <button style="color: white; background-color: black">submit</button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <p>&copy; <a href="#">foodie</a> All rights reserved 2021.</p>
+      </div>
+    </footer>
+  </body>
+</html>

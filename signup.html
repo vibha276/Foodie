@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="description" content="Name" />
+	<meta name="keywords" content="Give your keywords for SEO" />
+
+	<title>foodie signup</title>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+	<style>
+		.main{
+			margin:10px;
+		}   
+		.main h3{
+		color: green;    
+		} 
+		.wrapper{
+		   /* border:1px solid red;*/
+			width:90%;
+			margin: 0 auto;
+			padding: 1% 1%;
+		}
+		.header {
+			
+			background-color: red;
+			color:white;
+
+		}
+		.book h1{
+			text-align:center;
+			margin-bottom: 2%;
+			text-decoration:underline;
+			color:green;
+		}
+		.book p{
+			text-align:justify;
+			padding:1%;
+			line-height:30px;
+			
+		}
+		.footer{
+			
+			background-color: black;
+			color:white;
+			margin:5px;
+		}   
+
+		.footer p a{
+			color:white;   
+		}
+		.footer p a:hover{
+			text-decoration: none;
+			color:white;
+		}
+		.main{
+			margin:3px;
+		}
+		.menu ul{
+		   list-style-type: none;
+		   
+		}
+		
+		.booking-details{
+			background-color:#e0e0e0;
+		}
+
+		.menu ul li a{
+			text-decoration: none;
+			color:black;
+			padding:3px;
+		   height: 20px;
+		}
+		.menu ul li a:hover{
+			background-color: green;
+			color:white;
+		}
+		.menu ul li{
+			display:inline;
+		}
+			
+		.main .booking-details{
+			width:50%;
+			margin:0 auto;
+			//border:2px solid black;
+			padding: 2%;
+			margin:2% auto;    
+			box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 5px rgba(0, 0, 0, 0.19);
+		}
+		
+		.main .booking-details .name{
+			width:20%;
+			float:left;
+			font-weight:bold;
+		}
+
+		.main .booking-details input[type="text"], .main .booking-details input[type="email"],.main .booking-details input[type="tel"],
+		.main .booking-details textarea, .main .booking-details input[type="password"]{
+		padding:1%;
+		margin:0.5%;
+		width:60%;
+		height:;
+		
+			
+		} 
+		.main .booking-details input[type="button"]{
+			padding:2%;
+			background-color:grey;
+			color: white;
+			border: none;
+			margin-left:150px;
+			margin-right:20px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+		.main .booking-details input[type="button"]:hover{
+			box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 10px #c7c7c7;
+			transition:0.2s all;
+		}
+		.main .booking-details input[type="reset"]{
+			padding:2%;
+			background-color:grey;
+			color: white;
+			border: none;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+		.main .booking-details input[type="reset"]:hover{
+			box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 10px #c7c7c7;
+			transition:0.2s all;
+		} 
+		
+		#topcover{
+			height:500px;
+			width:100%;
+			background-image:url("https://t3.ftcdn.net/jpg/02/44/98/50/360_F_244985001_JkE2leAeXd0h91yOOXrq2Gfl7OKOg0qp.jpg");
+			background-size:cover;
+			background-position:center;
+			display:flex;
+			flex-direction:column;
+		}
+		
+		#logo2{
+			width:100%;
+			margin-top:120px;
+			text-align:center;
+			font-size:70px;
+			
+		}
+		
+		#topcontent{
+			width:100%;
+			text-align:center;
+			color:#c0c0c0c9;
+			font-size:40px;
+		}
+		
+		#btn11{
+			height:35px;
+			font-size:20px;
+			background: rgba(0,0,0, 0.2);
+			border:0;
+			color:white;
+		}
+		
+		#topmenu{
+			width:100%;
+			height:100px;
+			//border:2px solid black;
+			position:fixed;
+			top:1px;
+			background: rgba(0,0,0, 0.2);
+			display:flex;
+			flex-direction:row;
+		}
+		
+		#logo{
+			font-size:40px;
+			margin:25px 180px;
+			color:#c7c7c7;
+			text-shadow: 2px 2px 4px #000000;
+		}
+		
+		#namee{
+			font-family:fantasy;
+		}
+		
+		#categories{
+			display:flex;
+			flex-direction:row;
+			justify-content:space-between;
+			margin-top:40px;
+			margin-left:298px;
+			color:white;
+			width:600px;
+		}
+		
+		#logo2{
+			font-size:48px;
+			color:#c7c7c7;
+			text-shadow: 2px 2px 4px #000000;
+		}
+		
+		#contactus{
+			height:550px;
+			width:100%;
+			display:flex;
+			flex-direction:row;
+			justify-content:space-around;
+			//border:2px solid black;
+			background:black;
+		}
+		
+		#lft{
+			height:60%;
+			width:20%;
+			margin-top:3%;
+		}
+		
+		#rght{
+			height:60%;
+			width:25%;
+			margin-top:5%;
+		}
+		
+		#logo3{
+			font-size:50px;
+			color:#c7c7c7;
+		}
+		
+		.bdshadow{
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+		
+		.bdshadow:hover{
+			box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 10px #c7c7c7;
+			transition:0.2s all;
+		}
+		
+		.catlink{
+			text-decoration:none;
+			color:white;
+		}
+
+	</style>
+	</head>
+
+	<body>
+		
+		<div id="topcover">
+			<div id="logo2">
+				<i class="fas fa-utensils"></i>
+				<span id="namee">foodie</span>
+			</div>
+			<div id="topcontent">
+				Experience the best food delivery service near you<br> by ordering through Foodie!<br>
+				<b>Register now by filling the details below</b>
+			</div>
+		</div>
+		
+		<div id="topmenu" class="bdshadow">
+			<div id="logo" class="toptext">
+				<i class="fas fa-utensils"></i>
+				<span id="namee">foodie</span>
+			</div>
+			<div id="categories">
+				<a  class="catlink" href="restaurants.html"><div class="categ">
+					RESTAURANTS
+				</div></a>
+				<a  class="catlink" href="#spcl"><div class="categ">
+					SPECIAL OFFERS
+				</div></a>
+				<a  class="catlink" href="login.html"><div class="categ">
+					LOCATION
+				</div></a>
+				<a  class="catlink" href="#contactus"><div class="categ">
+					CONTACT US
+				</div></a>
+				<a  class="catlink" href="cart.html"><div class="categ">
+					CART
+					<i class="fas fa-shopping-cart"></i>
+				</div></a>
+			</div>
+		</div>
+
+		
+		<div class="main"><div class="wrapper">
+
+		  
+		<div class="book">
+
+
+		<!--clients booking details-->
+
+		<div class="booking-details">
+		<h1>Sign up</h1><br />
+
+		<form>
+		<span class="name">First Name</span>
+		<input type="text" name="first_name" placeholder="enter your first name"/><br />
+
+		<span class="name">Last Name</span>
+		<input type="text" name="last_name" placeholder="enter your last name"/><br />
+
+		<span class="name">E-mail</span>
+		<input type="email" name="email" placeholder="enter your e-mail id"/><br />
+		
+		<span class="name">Password</span>
+		<input type="password" name="password" placeholder="enter your password here"/><br />
+
+		<span class="name">Contact No</span>
+		<input type="tel" name="contact_no" placeholder="enter your contact number"/><br />
+
+		<span class="name">Address</span>
+		<textarea name="address">Your Address please</textarea><br /><br />
+
+		<a href="main.html"> <input type="button" value="SIGN UP" name="submit"/></a>
+		<input type="reset" value="RESET" name="reset"/><br />
+		</form>
+
+
+		</div>
+
+
+
+		 </div>
+		</div>
+		
+		
+		<div id="contactus" style="color:white">
+			<div id="lft" >
+				<div id="logo3">
+					<i class="fas fa-utensils"></i>
+					<span id="namee">foodie</span>
+				</div>
+				<div id="lct">
+					<h1><u>Address</u></h1>
+					<p> building no.6<br> sector 17<br> chandigarh</p>
+					<h1><u>phone no.</u></h1>
+					<p>mobile no. 9085112345<br> telephone 0172-2345123</p>
+					<h1><u>Email id</u></h1>
+					<p>support@foodie.com</p>
+				</div>
+			</div>
+			<div id="rght">
+				<h1>How was your experience with us?</h1>
+				<textarea rows="18" cols="50" placeholder="Enter your feedback here"></textarea>
+				<button style="color:white; background-color:black;">submit</button>
+			</div>
+		</div>
+		
+		<footer class="footer"><div class="wrapper">
+		<p>&copy; <a href="#">foodie</a>  All rights reserved 2021.</p></div>
+		</footer>
+
+	</body>
+</html>

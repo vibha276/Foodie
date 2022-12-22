@@ -1,0 +1,665 @@
+<!Doctype html>
+<html>
+<head>
+<title>food Items</title> 
+    
+    <script src="https://kit.fontawesome.com/aefb1c175c.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+    
+    
+            html{
+                background-color::#e0e0e0;
+                }
+            .container{
+                width:100%;background-color:orangered;box-shadow: 1px 0px 20px 0px grey;}   
+/*header*/
+
+
+		
+		#topmenu{
+			width:100%;
+			height:100px;
+			//border:2px solid black;
+			position:fixed;
+			top:1px;
+			background: rgba(0,0,0, 0.2);
+			display:flex;
+			flex-direction:row;
+		}
+		
+		#logo{
+			font-size:40px;
+			margin:25px 180px;
+			color:#c7c7c7;
+			text-shadow: 2px 2px 4px #000000;
+		}
+		
+		#namee{
+			font-family:fantasy;
+		}
+		
+		#categories{
+			display:flex;
+			flex-direction:row;
+			justify-content:space-between;
+			margin-top:40px;
+			margin-left:298px;
+			color:white;
+			width:600px;
+		}
+		
+		#logo2{
+			font-size:48px;
+			color:#c7c7c7;
+			text-shadow: 2px 2px 4px #000000;
+		}		
+        .bdshadow{
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+		
+		.bdshadow:hover{
+			box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 10px #c7c7c7;
+			transition:0.2s all;
+		}
+		
+		.catlink{
+			text-decoration:none;
+			color:white;
+		}
+		
+		.footer{
+			
+			background-color: black;
+			color:white;
+			margin:5px;
+		}   
+
+		.footer p a{
+			   
+		}
+		
+		.footer p a:hover{
+			text-decoration: none;
+			color:white;
+		}
+		
+		.wrapper{
+		   /* border:1px solid red;*/
+			width:90%;
+			margin: 0 auto;
+			padding: 1% 1%;
+		}
+
+
+/*section 1*/
+    .first{
+        display: flex;
+		
+        //padding:0px 20px;
+        
+    }
+    .first div{
+        //display:inline-block;
+		width:50%;
+		
+    } 
+           
+           
+/*    section-2*/
+    .second{
+        display:flex;
+        //padding:0px 20px;
+		flex-direction:column;
+    }
+    
+    .info {
+            font-size: 35px;
+            //display: inline-block;
+                    }
+    .ratings{
+        width:500px;
+        height:10px;
+        padding:0px 0px 0px 150px;
+        display:inline-block;
+        float:right;
+        border: 1px;
+        border-color: orangered;
+    }
+     button{
+                    width:100px;
+                    background-color:#697574;
+                    height:40px;
+					box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+					border:0;
+        
+                    }  
+    
+	.resrnm{
+		text-align:center;
+		font-size:70px;
+		font-family:sans;
+		font-weight:bold;
+		text-shadow: 2px 2px 4px #000000;
+		color:#c7c7c7;
+	}
+	
+	.resinf{
+		text-align:center;
+		font-size:40px;
+		font-family:german;
+		font-weight:bold;
+		text-shadow: 1px 1px 2px #000000;
+		color:black;
+		//margin-left:10px;
+	}
+            
+/* section -3   */
+	.third{
+			display:flex;
+			padding:0px 20px;
+			justify-content:space-around;
+			margin-top:100px;
+			background: rgba(0,0,0, 0.2);
+			padding-top:80px;
+			}
+	
+	.menu{
+		display:flex;
+		flex-direction:column;
+		justify-content:space-around;
+		
+				}
+	
+
+	.vertical-menu {
+		width: 300px;
+		height:1200px;
+		display: inline-block;
+		padding:50px 0px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+				}
+				
+	.menu h1{
+		//text-align:center;
+		font-size:55px;
+		font-family:german;
+		font-weight:bold;
+		text-shadow: 2px 2px 4px #000000;
+		color:white;
+		text-decoration:underline;
+	}
+
+	.vertical-menu a {
+			background-color: whitesmoke;
+			color: black;
+			display:block;
+			padding: 70px 30px;
+			margin:10 10 10 10;
+			text-decoration: none;
+						}
+
+	.vertical-menu a:hover {
+			background-color: #ccc;
+		}
+
+	.vertical-menu a.active {
+			background-color:#697574;
+			color: white;
+		}
+	
+
+	
+    
+    .menu-1{
+		width:800px;
+		height:200px;
+        display: flex;
+        margin:18px 10px;
+        //padding:30px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: whitesmoke;
+        
+        
+    }
+    
+    .menu-1:hover{
+			box-shadow: 0 4px 8px 15px rgba(0, 0, 0, 0.2), 0 6px 20px 15px #c7c7c7;
+			transition:0.2s all;
+		}
+    
+	
+	.fimg{
+		width:32%;
+		height:100%
+	}
+	
+	.fnam{
+		width:33%;
+		text-align:center;
+		font-size:30px;
+		font-family:german;
+		//font-weight:bold;
+		//text-shadow: 1px 1px 2px #000000;
+		color:black;
+		//margin-left:10px;
+		text-align:middle;
+	}
+	
+	
+	.fbtn{
+		width:33%;
+	}
+	
+	.markk{
+		color:green;
+		padding:0 .3em;
+		margin-top:20px;
+	}
+	
+    .fimg img{
+        width:100%;
+        height:100%;
+    }
+    .fbtn button{
+        background-color: white;
+        float: right;
+		margin-top:10%;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+	
+	
+/*    contact us*/
+    #contactus{
+			height:550px;
+			width:100%;
+			display:flex;
+			flex-direction:row;
+			justify-content:space-around;
+			//border:2px solid black;
+			background:black;
+		}
+    #lft{
+			height:60%;
+			width:20%;
+			margin-top:3%;
+		}
+		
+		#rght{
+			height:60%;
+			width:25%;
+			margin-top:5%;
+		}
+		
+		#logo3{
+			font-size:50px;
+			color:#c7c7c7;
+		}
+    
+    
+    
+    
+    </style>
+	
+	<script>
+		var c=0;
+		function addone(){
+			c++;
+			alert("you have "+c+" items in the cart now");
+			document.getElementById("cartt").innerHTML="<sup>"+c+"</sup>";
+		}
+	</script>
+	
+</head>
+<body>
+ 
+    
+<!---headersection-->   
+		
+		<div id="topmenu" class="bdshadow">
+			<div id="logo" class="toptext">
+				<i class="fas fa-utensils"></i>
+				<span id="namee">foodie</span>
+			</div>
+			<div id="categories">
+				<a  class="catlink" href="restaurants.html"><div class="categ">
+					RESTAURANTS
+				</div></a>
+				<a  class="catlink" href="main.html #spcl"><div class="categ">
+					SPECIAL OFFERS
+				</div></a>
+				<a  class="catlink" href="login.html"><div class="categ">
+					LOCATION
+				</div></a>
+				<a  class="catlink" href="#contactus"><div class="categ">
+					CONTACT US
+				</div></a>
+				<a  class="catlink" href="cart.html"><div class="categ">
+					CART
+					<i id="cartt" class="fas fa-shopping-cart"></i>
+				</div></a>
+			</div>
+		</div>
+		
+		
+ 
+<!--    first section-->
+		<section class="first bdshadow">
+			<div id="rest-pic">
+				<img width="100%" height="450px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoYQziiQMLb_7itjVKK5QqSssl3AGSXBUgkpstPAiqm2BkKBvFpvC7ugQw756RcC29GGk&usqp=CAU">
+			</div> 
+			<div  class="add-pic">
+				<img  width="100%" height="450px" src="https://media.bizj.us/view/img/11904929/img6429*1200xx3984-2241-0-208.jpg">
+			</div>
+			
+		</section>
+    
+<!--    Second section-->
+    
+		<section class="second">       
+			<div class="info">
+					<h1 class="resrnm"><i class="fas fa-utensils"></i> UNCLE JACKS <i class="fas fa-utensils"></i></h1>
+				   <span class="resinf">
+						Quick foods- fast food ,Deserts, shakes.<br>
+						Timings - 10am -10:30pm
+						<div class="ratings" style="color:gold">
+							<i class="far fa-star"></i>
+							<i class="far fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+					</span><br>
+					<button style="width:200px;"> <i class="far fa-star"></i>Add Review	</button>
+					<button><i class="fas fa-directions"></i>Directions</button>
+					<button> Bookmark  <i class="far fa-bookmark"></i></button>
+					<button><i class="fas fa-share"></i>Share</button>
+			</div>
+
+
+		</section>
+			
+		<!--Third Section-->
+		<section class="third">    
+				<div class="vertical-menu">
+					<a href="#" class="active">Recommended(30)</a>
+					<a href="#">Starters(1)</a>
+					<a href="#">Maincourse(25)</a>
+					<a href="#">Bread(11)</a>
+					<a href="#">Rice and Biryani(5)</a>
+					<a href="#">Chineese(9)</a>
+					<a href="#">Fried Rice and Noodles(4)</a>
+					<a href="#">Snacks(9)</a>
+				</div>
+			
+				<div class = "menu">       
+					<h1>Recommended</h1>
+					<div class="menu-1">
+						
+						<div class="fimg">
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz9VqhwhvJfbueRc9b9A8Q2KTiExtli9IMOw&usqp=CAU">
+						</div>
+						<div class="fnam">
+							<span class="markk">&#9679;&#8414;</span><span class="ftitle">Pizza Fries</span>
+						</div>
+						<div class="fbtn">
+							<button class="btclck" onclick="addone()">Add+</button>
+						</div>
+					</div>
+					<div class="menu-1">
+						<div class="fimg"> 
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFCpaLFgsUYQ3Q3yNGZJcKxSWUfBOQofM3zw&usqp=CAU">
+						</div>
+						<div class="fnam">
+							<span style="color:green;padding:0 .3em">&#9679;&#8414;</span>Rainbow Cake
+						</div>
+						
+						<div class="fbtn">
+						<button class="btclck" onclick="addone()">Add+</button>
+						</div>
+					</div>
+				
+					<div class="menu-1">
+						<div class="fimg">
+							<img src="https://mk0timesnextw7n7qiu0.kinstacdn.com/wp-content/uploads/2020/10/uncle-jacks-768x1024.jpg">
+						</div>
+						<div class="fnam">
+							<span style="color:green;padding:0 .3em">&#9679;&#8414;</span>nuggets combo
+					
+						</div>
+						<div class="fbtn">
+							<button class="btclck" onclick="addone()">Add+</button>
+						</div>
+					</div>
+					
+					<div class="menu-1">
+						<div class="fimg">
+							<img src="https://www.ruchiskitchen.com/wp-content/uploads/2020/12/Paneer-butter-masala-recipe-3.jpg">
+						</div>
+						<div class="fnam">
+							<span style="color:green;padding:0 .3em">&#9679;&#8414;</span>Paneer Butter Masala
+					
+						</div>
+						<div class="fbtn">
+							<button class="btclck" onclick="addone()">Add+</button>
+						</div>
+					</div>
+					
+					<div class="menu-1">
+						<div class="fimg">
+							<img src="https://www.whiskaffair.com/wp-content/uploads/2020/06/Dal-Makhani-2-1.jpg">
+						</div>
+						<div class="fnam">
+							<span style="color:green;padding:0 .3em">&#9679;&#8414;</span>Dal Makhani
+					
+						</div>
+						<div class="fbtn">
+							<button class="btclck" onclick="addone()">Add+</button>
+						</div>
+					</div>
+				
+					<div class="menu-1">
+						<div class="fimg">
+							<img src="https://www.whiskaffair.com/wp-content/uploads/2020/08/Veg-Biryani-2-1.jpg">
+						</div>
+						<div class="fnam">
+							<span style="color:green;padding:0 .3em">&#9679;&#8414;</span>Veg Biryani
+					
+						</div>
+						<div class="fbtn">
+							<button class="btclck" onclick="addone()">Add+</button>
+						</div>
+					</div>
+					<h1>Starters</h1>
+				
+				
+					<div class="menu-1">
+						<div class="fimg">
+							<img src="https://pinchofyum.com/wp-content/uploads/Vegan-Vodka-Pasta-3.jpg">
+						</div>
+						<div class="fnam">
+							<span style="color:green;padding:0 .3em">&#9679;&#8414;</span> Red Sauce Pasta
+					
+						</div>
+						<div class="fbtn">
+							<button class="btclck" onclick="addone()">Add+</button>
+						</div>
+					</div>
+					<div class="menu-1">
+						<div class="fimg">
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn5AdQ6ohLz98Qq97onqKT_81Sua7z3Folig&usqp=CAU">
+						</div>
+						<div class="fnam">
+							<span style="color:green;padding:0 .3em">&#9679;&#8414;</span> White Sauce Pasta
+					
+						</div>
+						<div class="fbtn" >
+							<button class="btclck" onclick="addone()">Add+</button>
+						</div>
+					</div>
+				
+					<div class="menu-1">
+						<div class="fimg">
+							<img src="https://www.whiskaffair.com/wp-content/uploads/2020/03/Hakka-Noodles-2-1.jpg">
+						</div>
+						<div class="fnam">
+							<span style="color:green;padding:0 .3em">&#9679;&#8414;</span>Veg Hakka Noodles
+					
+						</div>
+						<div class="fbtn">
+							<button class="btclck" onclick="addone()">Add+</button>
+						</div>
+					</div>
+					<h1>Chineese</h1>
+				
+					<div class="menu-1">
+						<div class="fimg">
+							<img src="https://www.cookshideout.com/wp-content/uploads/2014/11/Veg-Manchurian-Low-Fat2S.jpg">
+						</div>
+						<div class="fnam">
+							<span style="color:green;padding:0 .3em">&#9679;&#8414;</span>Veg Manchurian
+					
+						</div>
+						<div class="fbtn">
+							<button class="btclck" onclick="addone()">Add+</button>
+						</div>
+					</div>
+					<div class="menu-1">
+						<div class="fimg">
+							<img src="https://static.toiimg.com/thumb/52532656.cms?imgsize=498654&width=509&height=340">
+						</div>
+						<div class="fnam">
+							<span style="color:green;padding:0 .3em">&#9679;&#8414;</span>Honey Chilli Potato
+					
+						</div>
+						<div class="fbtn">
+							<button class="btclck" onclick="addone()">Add+</button>
+						</div>
+					</div>
+				
+					<div class="menu-1">
+						<div class="fimg">
+							<img src="https://www.funfoodfrolic.com/wp-content/uploads/2020/07/Fried-Rice-1.jpg">
+						</div>
+						<div class="fnam">
+							<span style="color:green;padding:0 .3em">&#9679;&#8414;</span>Fried Rice
+					
+						</div>
+						<div class="fbtn">
+							<button class="btclck" onclick="addone()">Add+</button>
+						</div>
+					</div>
+					
+					<h1>Summer Drinks</h1>
+					<div class="menu-1">
+						<div class="fimg">
+							<img src="https://www.whiskaffair.com/wp-content/uploads/2020/12/Masala-Soda-2-1.jpg">
+						</div>
+						<div class="fnam">
+							<span style="color:green;padding:0 .3em">&#9679;&#8414;</span>Masala Soda
+					
+						</div>
+						<div class="fbtn">
+							<button class="btclck" onclick="addone()">Add+</button>
+						</div>
+					</div> 
+					<div class="menu-1">
+						<div class="fimg">
+							<img src="https://www.whiskaffair.com/wp-content/uploads/2021/03/Cold-Coffee-2-1.jpg">
+						</div>
+						<div class="fnam">
+							<span style="color:green;padding:0 .3em">&#9679;&#8414;</span>Cold Coffee
+					
+						</div>
+						<div class="fbtn">
+							<button class="btclck" onclick="addone()">Add+</button>
+						</div>
+					</div>
+					
+					<div class="menu-1">
+						<div class="fimg">
+							<img src="https://www.whiskaffair.com/wp-content/uploads/2018/12/Strawberry-Lassi-2-1.jpg">
+						</div>
+						<div class="fnam">
+							<span style="color:green;padding:0 .3em">&#9679;&#8414;</span>Strawberry Lassi
+					
+						</div>
+						<div class="fbtn">
+							<button class="btclck" onclick="addone()">Add+</button>
+						</div>
+					</div>
+			  
+					<div class="menu-1">
+						<div class="fimg">
+							<img src="https://www.whiskaffair.com/wp-content/uploads/2020/03/Apple-Smoothie-2-3-720x960.jpg">
+						</div>
+						<div class="fnam">
+							<span style="color:green;padding:0 .3em">&#9679;&#8414;</span>Apple Smoothie
+						</div>
+						<div class="fbtn">
+							<button class="btclck" onclick="addone()">Add+</button>
+						</div>
+					</div>
+					<div class="menu-1">
+						<div class="fimg">
+							<img src="https://www.whiskaffair.com/wp-content/uploads/2019/02/Strawberry-Yogurt-Smoothie-2-1.jpg">
+						</div>
+						<div class="fnam">
+							<span style="color:green;padding:0 .3em">&#9679;&#8414;</span>Strawberry Yogurt Smoothie
+					
+					
+						</div>
+						<div class="fbtn">
+							<button class="btclck" onclick="addone()">Add+</button>
+						</div>
+					</div>  
+					<div class="menu-1">
+						<div class="fimg">
+							<img src="https://www.whiskaffair.com/wp-content/uploads/2019/05/Frozen-Strawberry-Margarita-2-1.jpg">
+						</div>
+						<div class="fnam">
+							<span style="color:green;padding:0 .3em">&#9679;&#8414;</span>
+								Frozen Strawberry Margarita
+					
+					
+						</div>
+						<div class="fbtn"s>
+							<button class="btclck" onclick="addone()">Add+</button>
+						</div>
+					</div>   
+				</div>  
+		</section>
+    
+    
+    
+    
+		<div id="contactus" style="color:white">
+			<div id="lft" >
+				<div id="logo3">
+					<i class="fas fa-utensils"></i>
+					<span id="namee">foodie</span>
+				</div>
+				<div id="lct">
+					<h1><u>Address</u></h1>
+					<p> building no.6<br> sector 17<br> chandigarh</p>
+					<h1><u>phone no.</u></h1>
+					<p>mobile no. 9085112345<br> telephone 0172-2345123</p>
+					<h1><u>Email id</u></h1>
+					<p>support@foodie.com</p>
+				</div>
+			</div>
+			<div id="rght">
+				<h1>How was your experience with us?</h1>
+				<textarea rows="18" cols="50" placeholder="Enter your feedback here"></textarea>
+				<button style="color:white; background-color:black;">submit</button>
+			</div>
+		</div>
+		
+		<footer class="footer"><div class="wrapper">
+		<p>&copy; <a href="#">foodie</a>  All rights reserved 2021.</p></div>
+		</footer>
+</body>
+
+</html>

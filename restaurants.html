@@ -1,0 +1,460 @@
+<!doctype html>
+<html>
+	
+	<head>
+		
+		<title>
+			foodie restaurants
+		</title>
+		
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+		
+		<style>
+		
+			#topcover{
+			height:400px;
+			width:100%;
+			background-image:url("https://t3.ftcdn.net/jpg/02/44/98/50/360_F_244985001_JkE2leAeXd0h91yOOXrq2Gfl7OKOg0qp.jpg");
+			background-size:cover;
+			background-position:center;
+			display:flex;
+			flex-direction:column;
+		}
+		
+		#logo2{
+			width:100%;
+			margin-top:120px;
+			text-align:center;
+			font-size:70px;
+			
+		}
+		
+		#topcontent{
+			width:100%;
+			text-align:center;
+			color:#c0c0c0c9;
+			font-size:40px;
+		}
+		
+		#btn11{
+			height:35px;
+			font-size:20px;
+			background: rgba(0,0,0, 0.2);
+			border:0;
+			color:white;
+		}
+		
+		#topmenu{
+			width:100%;
+			height:100px;
+			//border:2px solid black;
+			position:fixed;
+			top:1px;
+			background: rgba(0,0,0, 0.2);
+			display:flex;
+			flex-direction:row;
+		}
+		
+		#logo{
+			font-size:40px;
+			margin:25px 180px;
+			color:#c7c7c7;
+			text-shadow: 2px 2px 4px #000000;
+		}
+		
+		#namee{
+			font-family:fantasy;
+		}
+		
+		#categories{
+			display:flex;
+			flex-direction:row;
+			justify-content:space-between;
+			margin-top:40px;
+			margin-left:298px;
+			color:white;
+			width:600px;
+		}
+		
+		#logo2{
+			font-size:48px;
+			color:#c7c7c7;
+			text-shadow: 2px 2px 4px #000000;
+		}
+		
+		#contactus{
+			height:550px;
+			width:100%;
+			display:flex;
+			flex-direction:row;
+			justify-content:space-around;
+			//border:2px solid black;
+			background:black;
+		}
+		
+		#lft{
+			height:60%;
+			width:20%;
+			margin-top:3%;
+		}
+		
+		#rght{
+			height:60%;
+			width:25%;
+			margin-top:5%;
+		}
+		
+		#logo3{
+			font-size:50px;
+			color:#c7c7c7;
+		}
+		
+		.bdshadow{
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+		
+		.bdshadow:hover{
+			box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 10px #c7c7c7;
+			transition:0.2s all;
+		}
+		
+		#catlink{
+			text-decoration:none;
+			color:white;
+		}
+		
+		#restdisp{
+			width:100%;
+			height:1800px;
+			display:flex;
+			//border:2px solid black;
+			flex-direction:row;
+			flex-wrap:wrap;
+			justify-content:space-around;
+			//vertical-align:space-around;
+			background-color:#e0e0e0;
+		}
+		
+		.restopt{
+			width:40%;
+			height:200px;
+			//border:2px solid red;
+			margin-top:100px;
+			display:flex;
+			flex-direction:row;
+			background-color:white;
+		}
+		
+		.restoptimg{
+			width:40%;
+			height:100%;
+		}
+		
+		.restoptcnt{
+			display:flex;
+			flex-direction:column;
+			justify-content:space-around;
+			width:50%;
+			margin-left:8px;
+		}
+		
+		.resrnam{
+			text-align:center;
+			font-size:40px;
+			font-family:sans;
+			font-weight:bold;
+			text-shadow: 2px 2px 4px #000000;
+			color:#c7c7c7;
+			//border:1px solid grey;
+		}
+		
+		.resrate{
+			font-size:25px;
+			font-weight:bold;
+			/color:slategrey;
+		}
+		
+		.restdesc{
+			font-size:15px;
+			font-family:sans-serif;
+			
+		}
+		
+		.fa-star{
+			color:gold;
+		}
+		
+		.catlink{
+			text-decoration:none;
+			color:white;
+		}
+		
+		.footer{
+			
+			background-color: black;
+			color:white;
+			margin:5px;
+		}   
+
+		.footer p a{
+			   
+		}
+		
+		.footer p a:hover{
+			text-decoration: none;
+			color:white;
+		}
+		
+		.wrapper{
+		   /* border:1px solid red;*/
+			width:90%;
+			margin: 0 auto;
+			padding: 1% 1%;
+		}
+		
+		.resbtnn{
+			border:0;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			font-weight:bold;
+		}
+		
+		
+		
+		</style>
+		
+		<script>
+			
+		</script>
+		
+	</head>
+	
+	<body>
+	
+		<div id="topcover">
+			<div id="logo2">
+				<i class="fas fa-utensils"></i>
+				<span id="namee">RESTAURANTS</span>
+			</div>
+			<div id="topcontent">
+				Here are some of the best restaurants linked with Foodie
+			</div>
+		</div>
+		
+		<div id="topmenu" class="bdshadow">
+			<div id="logo" class="toptext">
+				<i class="fas fa-utensils"></i>
+				<span id="namee">foodie</span>
+			</div>
+			<div id="categories">
+				<a  class="catlink" href="restaurants.html"><div class="categ">
+					RESTAURANTS
+				</div></a>
+				<a  class="catlink" href="main.html #spcl"><div class="categ">
+					SPECIAL OFFERS
+				</div></a>
+				<a  class="catlink" href="login.html"><div class="categ">
+					LOCATION
+				</div></a>
+				<a  class="catlink" href="#contactus"><div class="categ">
+					CONTACT US
+				</div></a>
+				<a  class="catlink" href="cart.html"><div class="categ">
+					CART
+					<i class="fas fa-shopping-cart"></i>
+				</div></a>
+			</div>
+		</div>
+		
+		<div id="restdisp">
+			<div class="restopt bdshadow">
+				<div class="restoptimg">
+					<img height="100%" width="100%" src="https://purewows3.imgix.net/images/articles/2020_02/traditional-chinese-food-peking-duck.jpg?auto=format,compress&cs=strip">
+				</div>
+				<div class="restoptcnt">
+					<div class="resrnam">
+						Yup China
+					</div>
+					<div class="resrate">
+						Rating-4/5 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <a href="food1.html"><button class="resbtnn">click here</button></a>
+					</div>
+					<div class="restdesc">
+						Yup China is the best chinese restaurant near your location. Try the best chinese food at affordable prices.
+					</div>
+				</div>
+			</div>
+			<div class="restopt bdshadow">
+				<div class="restoptimg">
+					<img height="100%" width="100%" src="https://static.dezeen.com/uploads/2021/01/burger-king-logo-rebrand-bk-jkr_logo_dezeen_2364_col_0.jpg">
+				</div>
+				<div class="restoptcnt">
+					<div class="resrnam">
+						Burger King
+					</div>
+					<div class="resrate">
+						Rating-5/5 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <a href="food2.html"><button class="resbtnn">click here</button></a> 
+					</div>
+					<div class="restdesc">
+						Burger King is one of the best fast food restaurant near your location. Try best food at affordable prices.
+					</div>
+				</div>
+			</div>
+			<div class="restopt bdshadow">
+				<div class="restoptimg">
+					<img height="100%" width="100%" src="https://pbs.twimg.com/profile_images/1218132286647877635/GdXkBvYx.jpg">
+				</div>
+				<div class="restoptcnt">
+					<div class="resrnam">
+						Mcdonald's
+					</div>
+					<div class="resrate">
+						Rating-5/5 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <a href="food3.html"><button class="resbtnn">click here</button></a> 
+					</div>
+					<div class="restdesc">
+						Mcdonald's is one of the best fast food restaurant near your location. Try best food at affordable prices.
+					</div>
+				</div>
+			</div>
+			<div class="restopt bdshadow">
+				<div class="restoptimg">
+					<img height="100%" width="100%" src="https://1000logos.net/wp-content/uploads/2017/03/KFC-Logo.png">
+				</div>
+				<div class="restoptcnt">
+					<div class="resrnam">
+						KFC
+					</div>
+					<div class="resrate">
+						Rating-5/5 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <a href="food4.html"><button class="resbtnn">click here</button></a> 
+					</div>
+					<div class="restdesc">
+						KFC is one of the best fast food restaurant near your location. Try best food at affordable prices.
+					</div>
+				</div>
+			</div>
+			<div class="restopt bdshadow">
+				<div class="restoptimg">
+					<img height="100%" width="100%" src="https://i.pinimg.com/originals/44/b0/b6/44b0b6460f9ad67ee5e3f762e123263b.png">
+				</div>
+				<div class="restoptcnt">
+					<div class="resrnam">
+						Starbucks
+					</div>
+					<div class="resrate">
+						Rating-5/5 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <a href="food5.html"><button class="resbtnn">click here</button></a> 
+					</div>
+					<div class="restdesc">
+						Starbucks is the best coffee house near your location. Try best beverages at affordable prices.
+					</div>
+				</div>
+			</div>
+			<div class="restopt bdshadow">
+				<div class="restoptimg">
+					<img height="100%" width="100%" src="https://www.shoutlo.com/assets/images/merchant_images/merchant-154802-5e3944da93dd5.jpg">
+				</div>
+				<div class="restoptcnt">
+					<div class="resrnam">
+						Uncle Jack's
+					</div>
+					<div class="resrate">
+						Rating-5/5 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <a href="food6.html"><button class="resbtnn">click here</button></a> 
+					</div>
+					<div class="restdesc">
+						Uncle Jack's is one of the best fast food restaurant near your location. Try best food at affordable prices.
+					</div>
+				</div>
+			</div>
+			<div class="restopt bdshadow">
+				<div class="restoptimg">
+					<img height="100%" width="100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Dominos_pizza_logo.svg/1200px-Dominos_pizza_logo.svg.png">
+				</div>
+				<div class="restoptcnt">
+					<div class="resrnam">
+						Domino's
+					</div>
+					<div class="resrate">
+						Rating-5/5 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <a href="food7.html"><button class="resbtnn">click here</button></a> 
+					</div>
+					<div class="restdesc">
+						Domino's is one of the best fast food restaurant near your location. Try best food at affordable prices.
+					</div>
+				</div>
+			</div>
+			<div class="restopt bdshadow">
+				<div class="restoptimg">
+					<img height="100%" width="100%" src="https://1000logos.net/wp-content/uploads/2017/05/Pizza-Hut-Logo-1974.jpg">
+				</div>
+				<div class="restoptcnt">
+					<div class="resrnam">
+						Pizza Hut
+					</div>
+					<div class="resrate">
+						Rating-5/5 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <a href="food8.html"><button class="resbtnn">click here</button></a> 
+					</div>
+					<div class="restdesc">
+						Pizza Hut is one of the best fast food restaurant near your location. Try best food at affordable prices.
+					</div>
+				</div>
+			</div>
+			<div class="restopt bdshadow">
+				<div class="restoptimg">
+					<img height="100%" width="100%" src="https://static.dezeen.com/uploads/2021/01/burger-king-logo-rebrand-bk-jkr_logo_dezeen_2364_col_0.jpg">
+				</div>
+				<div class="restoptcnt">
+					<div class="resrnam">
+						Burger King
+					</div>
+					<div class="resrate">
+						Rating-5/5 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <a href="food1.html"><button class="resbtnn">click here</button></a> 
+					</div>
+					<div class="restdesc">
+						Burger King is one of the best fast food restaurant near your location. Try best food at affordable prices.
+					</div>
+				</div>
+			</div>
+			<div class="restopt bdshadow">
+				<div class="restoptimg">
+					<img height="100%" width="100%" src="https://purewows3.imgix.net/images/articles/2020_02/traditional-chinese-food-peking-duck.jpg?auto=format,compress&cs=strip">
+				</div>
+				<div class="restoptcnt">
+					<div class="resrnam">
+						Yup China
+					</div>
+					<div class="resrate">
+						Rating-4/5 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <a href="food2.html"><button class="resbtnn">click here</button></a> 
+					</div>
+					<div class="restdesc">
+						Yup China is the best chinese restaurant near your location. Try the best chinese food at affordable prices.
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="contactus" style="color:white">
+			<div id="lft" >
+				<div id="logo3">
+					<i class="fas fa-utensils"></i>
+					<span id="namee">foodie</span>
+				</div>
+				<div id="lct">
+					<h1><u>Address</u></h1>
+					<p> building no.6<br> sector 17<br> chandigarh</p>
+					<h1><u>phone no.</u></h1>
+					<p>mobile no. 9085112345<br> telephone 0172-2345123</p>
+					<h1><u>Email id</u></h1>
+					<p>support@foodie.com</p>
+				</div>
+			</div>
+			<div id="rght">
+				<h1>How was your experience with us?</h1>
+				<textarea rows="18" cols="50" placeholder="Enter your feedback here"></textarea>
+				<button style="color:white; background-color:black;">submit</button>
+			</div>
+		</div>
+		
+		<footer class="footer"><div class="wrapper">
+		<p>&copy; <a href="#">foodie</a>  All rights reserved 2021.</p></div>
+		</footer>
+		
+	
+	</body>
+
+</html>
